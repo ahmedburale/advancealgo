@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.patternmatching;public class RabinKarpService {
+package advancedalgo.algorithm.patternmatching;
+
+public class RabinKarpService {
 }

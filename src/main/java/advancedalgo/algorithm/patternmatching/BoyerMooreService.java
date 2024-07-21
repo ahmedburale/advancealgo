@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.patternmatching;public class BoyerMooreService {
+package advancedalgo.algorithm.patternmatching;
+
+public class BoyerMooreService {
 }

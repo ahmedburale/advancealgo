@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.trie;public class SuffixTreeService {
+package advancedalgo.algorithm.trie;
+
+public class SuffixTreeService {
 }

@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.trie;public class SuffixTrieServiceTest {
+package advancedalgo.algorithm.trie;
+
+public class SuffixTrieServiceTest {
 }

@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.compression;public class HuffmanCompressionService {
+package advancedalgo.algorithm.compression;
+
+public class HuffmanCompressionService {
 }

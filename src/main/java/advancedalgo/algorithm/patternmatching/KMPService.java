@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.patternmatching;public class KMPService {
+package advancedalgo.algorithm.patternmatching;
+
+public class KMPService {
 }

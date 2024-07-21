@@ -1,2 +1,4 @@
-package advancedalgo.algorithm.patternmatching;public class BruteForceService {
+package advancedalgo.algorithm.patternmatching;
+
+public class BruteForceService {
 }
