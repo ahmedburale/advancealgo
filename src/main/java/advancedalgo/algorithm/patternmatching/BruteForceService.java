@@ -1,23 +1,24 @@
 package advancedalgo.algorithm.patternmatching;
 
+
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Brute Force Algorithm
- *
- * This service provides methods to search for a pattern in an array.
- * - If the pattern is found, the index of the first occurrence is returned.
- * - If no match is found, -1 is returned.
- * - Additionally, a method to find all occurrences of the pattern is provided.
+ * It will search for a pattern in an array and if the pattern is found it will
+ * return the index of the array where the first letter of the pattern was found.
+ * If no match is found, it will return -1.
  */
 public class BruteForceService {
 
     /**
-     * Searches for the first occurrence of the pattern in the array.
+     * This method searches for the pattern in an array and returns the index of the first char that matches.
+     * If no match is found, -1 is returned.
      *
-     * @param array   The array to search in
-     * @param pattern The pattern to search for
-     * @return The index of the first occurrence of the pattern, or -1 if no match is found
+     * @param array
+     * @param pattern
+     * @return
      */
     public int firstMatch(char[] array, char[] pattern) {
         for (int i = 0; i <= array.length - pattern.length; i++) {
@@ -35,14 +36,15 @@ public class BruteForceService {
     }
 
     /**
-     * Searches for all occurrences of the pattern in the array.
+     * This method searches for a pattern in an array and returns an array of int with the indexes of
+     * the elements found.
      *
-     * @param array   The array to search in
-     * @param pattern The pattern to search for
-     * @return An array of indices where the pattern is found
+     * @param array
+     * @param pattern
+     * @return
      */
     public int[] everyMatch(char[] array, char[] pattern) {
-        ArrayList<Integer> indices = new ArrayList<>();
+        List<Integer> found = new ArrayList<>();
         for (int i = 0; i <= array.length - pattern.length; i++) {
             int j;
             for (j = 0; j < pattern.length; j++) {
@@ -51,9 +53,10 @@ public class BruteForceService {
                 }
             }
             if (j == pattern.length) {
-                indices.add(i);
+                found.add(i);
             }
         }
-        return indices.stream().mapToInt(Integer::intValue).toArray();
+        return found.stream().mapToInt(i -> i).toArray();
     }
 }
+
